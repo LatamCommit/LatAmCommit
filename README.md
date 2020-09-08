@@ -1,7 +1,7 @@
 # LatAmCommit
 
-Compañeros les recuerdo que este será un proyecto OpenSource para practicar conocimientos de Git y GitHub en un sitio web sencillo. 
+Welcome to this OpenSource project, the main goal is to practice our Git and GitHub skills in a simple static website
 
-Todas las decisiones serán cambiadas a medida que demás compañeros se unan, todos aportan, las cosas se pueden cambiar no crean que una cosa se va a quedar así en todo el proyecto.
+Here everything will change, this repo is going to be in a certain way ***alive*** as more and more developers join and everyone colaborates. Code will evolve constantly. 
 
-**¡A hacer commits se ha dicho!**
+**Let the commits begin!**
