@@ -5,7 +5,7 @@
 Welcome to this OpenSource project, the main goal is to practice our Git and GitHub skills in a simple static blog (meanwhile).
 Here everything will change, this repo is going to be in a certain way ***alive*** as more and more developers join and everyone colaborates. Code will evolve constantly. 
 
-#Goals
+<h1>Goals</h1>
 
 - Create a professional GitHub workflow
 - Develop a static blog.
