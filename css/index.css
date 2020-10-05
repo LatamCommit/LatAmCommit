@@ -1,23 +1,29 @@
 *{
     margin: 0;
 }
-@media screen and (max-width:767px) {
 
-}
+html{
+    font-size: 62.5%;
+} 
+
 header {
     width: 100%
 }
 header .header-logo {
 /*    border: solid 2px black;*/
     width: 50%;
-    margin: 25px 90px auto 10px;
+    margin: 2.5rem 9rem auto 1rem;
     display: inline-block;
 }
 header .buttons-become_collab { /*link del enlace become a collaborator*/
     display: inline-block;
-    width: 70px;
+    width: 7rem;
     text-decoration: none;
     color: black;
     background-color: white;
     border-bottom: solid 1px black;
+}
+
+@media screen and (max-width:767px) {
+
 }
