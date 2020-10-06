@@ -1,13 +1,5 @@
-import Home from '../pages/Home.js';
-import Blog from '../pages/Blog.js';
-import Collaborator from '../pages/Collaborator.js';
 import Error404 from '../pages/Error404.js';
-
-const routes = {
-	'/': Home,
-	'/blog': Blog,
-	'/collaborator': Collaborator,
-};
+import routes from './routes.js';
 
 const router = () => {
 	const $main = document.getElementById('main');
