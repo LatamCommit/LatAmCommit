@@ -6,26 +6,25 @@
 
 ## Estructura de archivos
 
+- Este proyecto será una SPA (Single Page Application) y tendrá la siguiente estructura:
+
 ```yml
-README.md
-.gitignore
-index.html
 docs: ...
 mockups: ...
-html:
-	blogs: index.html
-	other-folder: index.html
-css:
-	main-styles.css
-	home.css
-	blog.css
-	...
-js:
-	main.js
-	home.js
-	blog.js
-	...
-assets: ...
+src:
+	img: ...
+	pages: ...
+	routes: index.js
+	styles:
+		index.css
+		tablet.css
+		desktop.css
+	index.js
+.gitignore
+.prettierrc
+collaborators.txt
+index.html
+README.md
 ```
 
 ## Reglas Generales
@@ -38,37 +37,38 @@ assets: ...
 
 ### Acerca de los archivos HTML
 
-- Solo debe haber un archivo **_index.html_** para el home del sitio. Los demás archivos deben estar separados en subcarpetas dentro de la carpeta _html_. Cada una de estas subcarpetas debe contener también un archivo **_index.html_**.
-
+- Solo debe haber un archivo **_index.html_**, el cuál servirá para mostrar todas las vistas del sitio las cuáles serán cambiadas con JavaScript.
 - Usar buenas prácticas y código semántico.
-- Dentro del `<body>` se debe tener la siguiente estructura:
+- Dentro de `<body>` se debe tener la siguiente estructura:
 
 ```html
 <body>
 	<header>...</header>
-	<main>...</main>
+	<main id="main">...</main>
 	<footer>...</footer>
 
-	<script src=" ... "></script>
+	<script type="module" src="src/index.js"></script>
 </body>
 ```
 
+- Dentro de `<main>` es donde se renderizarán las vistas.
+
 ### Acerca de los archivos CSS
 
-- Todos los archivos de CSS se encontrarán en la carpeta _css_
+- Todos los archivos de CSS se encontrarán en la carpeta _src/styles_
 - El contenido en cada archivo debe seguir el siguiente orden:
 
 ```css
-/* importaciones de fuentes o de otras hojas de estilos */
+/* importaciones de fuentes (solo en index.css) */
 @import ('...');
 
-/* variables */
+/* variables (solo en index.css) */
 :root {
 	--color-primario: ...;
 	--color-secundario: ...;
 }
 
-/* selectores generales (de etiquetas) */
+/* selectores de etiquetas (solo en index.css) */
 body {
 	...;
 }
@@ -84,11 +84,6 @@ header {
 	...;
 }
 .blog__content {
-	...;
-}
-
-/* media queries */
-@media screen and (min-width: 480px) {
 	...;
 }
 ```
@@ -117,28 +112,10 @@ something {
 
 ### Acerca de los archivos de JavaScript
 
-- Todos los archivos de JavaScript se encontrarán en la carpeta _js_
-- Se debe seguir el siguiente orden en los archivos:
-
-```js
-// Variables
-const foo = 'bar'
-
-// Elements
-const $button = document.getElementById('button')
-
-// Functions
-function sayHi () { ... }
-
-// Events
-$button.addEventListener('click', ...)
-
-// Main Code
-sayHi()
-```
-
-- Los nombres de variables y de funciones se escribirán en camel case.
-- Los nombres de los elementos se escribirán en camel case y con el signo `$` por delante.
+- Todos los archivos de JavaScript se encontrarán en la carpeta _src_
+- En el archivo **_index.js_** se encuentra el uso del router.
+- En el archivo **_routes/index.js_** se encuentra el router y las rutas.
+- En la carpeta **_pages_** se encuentran las vistas. El nombre de estos archivos debe estar en camel case empezando con mayúscula.
 
 ### Acerca del formateo
 
