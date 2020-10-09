@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 * {
 	margin: 0;
 }
@@ -26,11 +28,21 @@ header {
 .header__navbar__links li {
 	display: inline-block;
 	margin: auto 5px auto 5px;
+	padding-bottom: 15px;
 	justify-self: center;
 	align-self: center;
-    color: azure;
 }
-body {
+.header__navbar__links li a {
+	font-family: 'Roboto', sans-serif;
+	font-size: 17px;
+	font-weight: 600;
+	color: #333;
+	text-decoration: none;
+}
+.header__navbar__links li a:hover{
+	border-bottom: solid #333;
+	border-radius: 5px;
+}
+main {
 	background-color: #f5f5f5;
-	/*color it's just for test*/
 }
