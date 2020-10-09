@@ -4,5 +4,18 @@
 
 header {
 	display: grid;
-	width: 100%;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 100px;
+	grid-template-areas: 
+	". logo .";
+}
+.header__logo {
+	grid-area: logo;
+}
+.header__logo img {
+	width: 200px;
+}
+body {
+	background-color: darkcyan;
+	/*color it's just for test*/
 }
