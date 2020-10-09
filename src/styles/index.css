@@ -3,6 +3,7 @@
 }
 
 header {
+	display: grid;
 	width: 100%;
 }
 header .header-logo {
