@@ -40,7 +40,7 @@ header {
 .header__navbar {
 	grid-area: nav;
 	height: 80px;
-	background-color: #b4b4b4;
+	background-color: #cacaca;
 }
 .header__navbar__links {
 	list-style: none;
