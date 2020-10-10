@@ -1,17 +1,17 @@
-# Flujo de trabajo - LatAmCommit
+# Work Flow - LatAmCommit
 
-## Acerca de las ramas
+## About the branches
 
 - Todo el desarrollo se empieza en ramas que deben crearse a partir de la rama `development`, la cual será la rama para pruebas antes de pasar los cambios a la rama `master`
 
-## Acerca de los commits
+## About the commits
 
-- Todos los mensajes de los commits deben estar escritos en inglés y seguir la siguiente estructura:
+- Messeges should be written in English and follow the structure below:
 
 ```bash
-"<parte modificada>: <detalle de la modificación>"
+"< modified part >: <what was changed>"
 
-# Ejemplo
+# Example
 
 git commit -m "footer: background color changed to blue"
 ```

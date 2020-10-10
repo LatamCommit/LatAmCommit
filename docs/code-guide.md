@@ -1,25 +1,27 @@
 # Guía de código - LatAmCommit
 
-## Principios
+## Principles
 
-- Debemos tener un código que luzca como si una sola persona lo haya escrito.
+- We are aiming to have a code that looks like only 1 person wrote it
 
-## Estructura de archivos
+## Data Structure
 
-- Este proyecto será una SPA (Single Page Application) y tendrá la siguiente estructura:
+- This project seeks to be SPA ( Single Page Application ) and it will follow the structure:
 
 ```yml
 docs: ...
 mockups: ...
 src:
-	img: ...
-	pages: ...
-	routes: index.js
-	styles:
-		index.css
-		tablet.css
-		desktop.css
-	index.js
+	  img: ...
+	  pages: ...
+    router:
+        index.js
+        routes.js
+	  styles:
+		    index.css
+		    tablet.css
+		    desktop.css
+	  index.js
 .gitignore
 .prettierrc
 collaborators.txt
@@ -27,19 +29,19 @@ index.html
 README.md
 ```
 
-## Reglas Generales
+## General Rules
 
-### Acerca de las tecnologías a usar
+### Stack that will be used
 
-- Las únicas tecnologías a usar en este proyecto serán HTML, CSS y JavaScript.
-- Se aplicará la metodología BEM para las clases en el HTML y en el CSS.
-- Todo el código a excepción del contenido estará escrito en Ingles.
+- It will be only use CSS3, HTML5 and Javascript.
+- For the styles the BEM methodology will be used
+- The only language that will be used is English
 
-### Acerca de los archivos HTML
+### About the HTML5
 
-- Solo debe haber un archivo **_index.html_**, el cuál servirá para mostrar todas las vistas del sitio las cuáles serán cambiadas con JavaScript.
-- Usar buenas prácticas y código semántico.
-- Dentro de `<body>` se debe tener la siguiente estructura:
+- It should only be one **_index.html_**, which will serve to display all the views of the site which will be modify using script coded in Javascript
+- Best practices and semantic code .
+- The `<body>` section will have the follow structure:
 
 ```html
 <body>
@@ -51,54 +53,23 @@ README.md
 </body>
 ```
 
-- Dentro de `<main>` es donde se renderizarán las vistas.
+- Inside the `<main>` the views will be rendered.
 
-### Acerca de los archivos CSS
+### About the CSS files
 
-- Todos los archivos de CSS se encontrarán en la carpeta _src/styles_
-- El contenido en cada archivo debe seguir el siguiente orden:
+- All the CSS files will be inside the _src/styles_ folder
 
-```css
-/* importaciones de fuentes (solo en index.css) */
-@import ('...');
-
-/* variables (solo en index.css) */
-:root {
-	--color-primario: ...;
-	--color-secundario: ...;
-}
-
-/* selectores de etiquetas (solo en index.css) */
-body {
-	...;
-}
-header {
-	...;
-}
-
-/* selectores de clases (usar BEM) */
-.blog {
-	...;
-}
-.blog__title {
-	...;
-}
-.blog__content {
-	...;
-}
-```
-
-- Se debe seguir el siguiente orden en las propiedades de cada regla:
+- It should be follow the rules in each rule property
 
 ```css
 something {
-	/* Propiedades de modelo de caja (display, width, height, margin, padding) */
-	/* Posicionamiento (position, top, bottom, z-index) */
-	/* Tipografía (font-size, font-family, text-transform) */
-	/* Decoración (background, color) */
+	/* Box-Model properties (display, width, height, margin, padding) */
+	/* Positioning (position, top, bottom, z-index) */
+	/* Typography (font-size, font-family, text-transform) */
+	/* Decoration (background, color) */
 }
 
-/* Ejemplo */
+/* Example */
 .button {
 	display: block;
 	width: 220px;
@@ -110,19 +81,15 @@ something {
 }
 ```
 
-### Acerca de los archivos de JavaScript
+### About the Javascript files
 
-- Todos los archivos de JavaScript se encontrarán en la carpeta _src_
-- En el archivo **_index.js_** se encuentra el uso del router.
-- En el archivo **_routes/index.js_** se encuentra el router y las rutas.
-- En la carpeta **_pages_** se encuentran las vistas. El nombre de estos archivos debe estar en camel case empezando con mayúscula.
+- All the Javascript files will be into the _src_ folder.
+- The router will be find inside the **_routes/index.js_** file.
+- The views will be in the **_pages_** folder, and the name of their file must start with a capital leter.
 
-### Acerca del formateo
+### Formating
 
-- Para el formateo del código se usará Prettier.
-- Las configuraciones se encuentran en el archivo **_.prettierrc_**.
-- Para usar Prettier se debe instalar en las extensiones de VSCode.
-- Una vez instalado se presiona `Ctrl + Shift + P` y se busca la opción `Format Document`. Tambien se puede ejecutar el atajo `Shift + Alt + F` para formatear.
-- Para formatear al momento de guardar habilitar la opción `"editor.formatOnSave": true` en las configuraciones de VSCode.
+- The code will be standardized with Prettier.
+- Prittier config file is on **_.prettierrc_**.
 
-> Cualquier recomendación para la guía de estilos o para la documentación en general puede ser realizada en el grupo de Slack
+> Any suggestion can be written in the Slack Group
