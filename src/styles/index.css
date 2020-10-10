@@ -23,6 +23,9 @@ header {
 .header__logo img {
 	width: 200px;
 }
+.header__links {
+	display: none;
+}
 .header__navbar {
 	grid-area: nav;
 }
