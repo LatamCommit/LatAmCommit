@@ -48,23 +48,28 @@ footer {
 	background-color: var(--bg-footer-color);
 }
 
-footer .logo-container {
+.footer__logo-container {
 	width: 40%;
 	margin: auto;
 }
 
-footer .logo-container img {
+.footer__logo {
 	width: 100%;
 	filter: invert(100%) sepia(1%) saturate(24%) hue-rotate(331deg) brightness(115%) contrast(92%);
 }
 
-footer .links {
+.footer__elements-list {
 	margin-top: 20px;
+	padding-left: 0;
 }
 
-footer .links a {
+.footer__element {
 	display: block;
 	margin: 10px auto;
 	font-weight: 300;
+	list-style: none;
+}
+
+.footer__element a {
 	color: var(--font-light-color);
 }
