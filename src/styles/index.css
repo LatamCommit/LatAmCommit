@@ -40,34 +40,35 @@ header .buttons-become_collab {
 }
 
 footer {
-	width: 100%;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto;
 	padding: 10px;
 	background-color: var(--bg-footer-color);
 }
 
-footer .footer {
-	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: auto auto;
-}
-
-footer .footer__logo-container {
+.footer__logo-container {
 	width: 40%;
 	margin: auto;
 }
 
-footer .footer__logo-container img {
+.footer__logo {
 	width: 100%;
 	filter: invert(100%) sepia(1%) saturate(24%) hue-rotate(331deg) brightness(115%) contrast(92%);
 }
 
-footer .footer__links {
+.footer__elements-list {
 	margin-top: 20px;
+	padding-left: 0;
 }
 
-footer .footer__links a {
+.footer__element {
 	display: block;
 	margin: 10px auto;
 	font-weight: 300;
+	list-style: none;
+}
+
+.footer__element a {
 	color: var(--font-light-color);
 }
