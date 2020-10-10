@@ -28,6 +28,8 @@ header {
 }
 .header__navbar {
 	grid-area: nav;
+	height: 60px;
+	background-color: #b4b4b4;
 }
 .header__navbar__links {
 	list-style: none;
