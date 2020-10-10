@@ -45,27 +45,27 @@ footer {
 	background-color: var(--bg-footer-color);
 }
 
-footer .grid {
+footer .footer {
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: auto auto;
 }
 
-footer .grid__logo-container {
+footer .footer__logo-container {
 	width: 40%;
 	margin: auto;
 }
 
-footer .grid__logo-container img {
+footer .footer__logo-container img {
 	width: 100%;
 	filter: invert(100%) sepia(1%) saturate(24%) hue-rotate(331deg) brightness(115%) contrast(92%);
 }
 
-footer .grid__links {
+footer .footer__links {
 	margin-top: 20px;
 }
 
-footer .grid__links a {
+footer .footer__links a {
 	display: block;
 	margin: 10px auto;
 	font-weight: 300;
