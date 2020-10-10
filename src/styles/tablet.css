@@ -1,3 +1,30 @@
 body {
 	color: blue;
 }
+
+footer .grid {
+	grid-template-columns: 350px 1fr;
+	grid-template-rows: auto;
+	height: 250px;
+}
+
+footer .grid__logo-container {
+	display: flex;
+	align-items: center;
+	width: 80%;
+	margin: 30px auto;
+	padding-right: 30px;
+	border-right: 2px solid #f5f5f5;
+}
+
+footer .grid__links {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	margin: 0 25px 0 auto;
+}
+
+footer .grid__links a {
+	margin: 10px 0;
+}

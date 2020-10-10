@@ -40,7 +40,7 @@ header .buttons-become_collab {
 }
 
 footer {
-	width: 100vw;
+	width: 100%;
 	padding: 10px;
 	background-color: var(--bg-footer-color);
 }
