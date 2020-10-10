@@ -2,6 +2,7 @@
 
 * {
 	margin: 0;
+	font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -11,6 +12,9 @@ header {
 	grid-template-areas: 
 	". logo ."
 	"nav nav nav";
+}
+.header__desc {
+	display: none;
 }
 .header__logo {
 	grid-area: logo;
@@ -33,7 +37,6 @@ header {
 	align-self: center;
 }
 .header__navbar__links li a {
-	font-family: 'Roboto', sans-serif;
 	font-size: 17px;
 	font-weight: 600;
 	color: #333;
