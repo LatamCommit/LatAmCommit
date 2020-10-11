@@ -1,3 +1,29 @@
 body {
 	color: blue;
 }
+
+.footer {
+	grid-template-columns: 350px 1fr;
+	grid-template-rows: auto;
+	height: 250px;
+}
+
+.footer__logo-container {
+	display: flex;
+	align-items: center;
+	width: 80%;
+	margin: 30px auto;
+	padding-right: 30px;
+	border-right: 2px solid #f5f5f5;
+}
+
+.footer__elements-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 25px 0 auto;
+}
+
+.footer__element {
+	margin: 10px 0;
+}
