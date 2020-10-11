@@ -2,7 +2,7 @@ body {
 	color: blue;
 }
 
-footer {
+.footer {
 	grid-template-columns: 350px 1fr;
 	grid-template-rows: auto;
 	height: 250px;
