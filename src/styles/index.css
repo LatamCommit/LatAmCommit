@@ -39,7 +39,7 @@ header .buttons-become_collab {
 	border-bottom: solid 1px black;
 }
 
-footer {
+.footer {
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: auto auto;
