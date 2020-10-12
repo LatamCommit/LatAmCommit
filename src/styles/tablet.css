@@ -14,14 +14,14 @@ header {
 	width: 200px;
 }
 .header__desc {
+	grid-area: desc;
 	display: block;
 	padding-top: 12px;
 	padding-left: 12px;
-	height: 60px;
-	grid-area: desc;
-	font-weight: 100;
 	justify-self: center;
 	align-self: center;
+	height: 60px;
+	font-weight: 100;
 	border-left:solid #333 2px;
 }
 .header__links {
@@ -39,25 +39,24 @@ header {
 }
 .header__navbar {
 	grid-area: nav;
-	height: 80px;
+	height: 50px;
 	background-color: #cacaca;
 }
 .header__navbar__links {
 	list-style: none;
 	padding-top: 15px;
-	padding-left: 70px;
-	padding-right: 70px;
-	justify-self: center;
-	align-self: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: center;
 }
 .header__navbar__links li {
 	display: inline-block;
-	padding-right: 60px;
+	padding-right: 40px;
 	padding-bottom: 15px;
 }
 .header__navbar__links li a {
 	font-family: 'Roboto', sans-serif;
-	font-size: 17px;
+	font-size: 1rem;
 	font-weight: 600;
 	color: #333;
 	text-decoration: none;
